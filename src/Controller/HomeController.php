@@ -61,6 +61,7 @@ class HomeController extends AbstractController
             'age' => $age,
             'job' => 'Developpeur Fullstack',
             'pays' => 'France',
+            'nomMachine' => gethostname(),
         ];
         
         return $this->render('home/hello.html.twig', [
@@ -70,6 +71,7 @@ class HomeController extends AbstractController
             'job' => $personne['job'],
             'pays' => $personne['pays'],
             'dateDuJour' => $dateDuJour,
+            'nomMachine' => $personne['nomMachine'],
 
         ]);
     }
