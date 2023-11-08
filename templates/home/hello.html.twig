@@ -1,8 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello Seonay !{% endblock %}
+{% block title %}Portfolio !{% endblock %}
 
 {% block body %}
-    <h1>Hello !</h1>
+    <h1>Hello  {{prenom}} {{nom}}! </h1>
+    <p>J'ai {{age}} ans</p>
+    <p>Je suis {{job}}</p>
+    <p>Datte du jours {{dateDuJour}}</p>
+    <img src="{{ asset('images/Seonay.png') }}" alt="Seonay" />
 {% endblock %}
 

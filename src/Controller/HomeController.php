@@ -18,7 +18,24 @@ class HomeController extends AbstractController
     #[Route('/bonjour', name: 'app_bonjour')]
     public function app_bonjour (): Response
     {
+        $dateDuJour = date('d/m/Y H:i:s');
+        $personne = [
+            'prenom' => 'Seonay',
+            'nom' => 'D',
+            'age' => '19',
+            'job' => 'Developpeur Fullstack',
+            'pays' => 'France',
+        ];
         return $this->render('home/hello.html.twig', [
+            'prenom' => $personne['prenom'],
+            'nom' => $personne['nom'],
+            'age' => $personne['age'],
+            'job' => $personne['job'],
+            'pays' => $personne['pays'],
+            'dateDuJour' => $dateDuJour,
+
         ]);
     }
+
+
 }
