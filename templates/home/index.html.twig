@@ -1,11 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Hello Seonay !{% endblock %}
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; background: #FFF5F5; padding: 20px; border-radius: 4px;}
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; background: #FFF5F5; padding: 20px; border-radius: 4px;}
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; border-radius: 3px; color: #c7254e;}
+    .example-wrapper ul { padding-left: 20px;}
+    .example-wrapper li { margin-top: 12px; color: #0FF000;}
 </style>
 
 <div class="example-wrapper">
@@ -13,8 +16,11 @@
 
     This friendly message is coming from:
     <ul>
+        <li>Mathéo DELAUNAY<code><a href="https://www.linkedin.com/in/math%C3%A9o-delaunay/" >LinkedIn</a></code></li>
         <li>Your controller at <code><a href="{{ '/Users/seonay/Projects/Development/School/Symfony/Intro/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
         <li>Your template at <code><a href="{{ '/Users/seonay/Projects/Development/School/Symfony/Intro/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
+        <li>Lien vers /bonjour <code><a href="" </li>
     </ul>
+
 </div>
 {% endblock %}
